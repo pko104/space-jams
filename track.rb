@@ -1,11 +1,14 @@
 class Track
-  attr_reader :track_id, :album_id, :title, :track_number, :duration_ms
+  attr_reader :album_id, :id, :track_number, :duration_ms, :title
 
-  def initialize (album_id, track_id, title, track_number, duration_ms)
+  def initialize (album_id, id, track_number, duration_ms, title)
     @album_id = album_id
-    @track_id = track_id
+    @id = id
     @title = title
     @track_number = track_number
     @duration_ms = duration_ms
   end
+
 end
+
+
